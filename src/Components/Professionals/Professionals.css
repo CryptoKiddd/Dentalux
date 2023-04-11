@@ -1,0 +1,36 @@
+.pros-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 88px;
+    margin-top: 200px;
+   
+}
+.pros-left img{
+    max-width: 600px;
+    width: 100%;
+}
+.pros-right h2{
+    background: linear-gradient(270.09deg, #787878 -37.08%, #575757 65.48%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 401px;
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 70px;
+ 
+}
+.pros-right h2 span{
+    font-size: 34px;
+}
+.pros-right p{
+    max-width: 500px;
+    width: 100%;
+    background: linear-gradient(89.65deg, #696969 0.29%, #999999 102.07%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+fill: transparent;
+font-size: 18px;
+
+}

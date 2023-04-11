@@ -1,0 +1,46 @@
+.navigation-container{
+    display: flex;
+    align-items: center;
+    padding: 20px 10px ;
+    justify-content: space-around;
+  
+
+  
+
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color:#8D8D8D ;
+    font-size: 17px;
+}
+.nav-links li{
+    cursor: pointer;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.logo span {
+    background:linear-gradient(90deg, #96E1E1 8.2%, #009393 137.76%);
+    -webkit-background-clip: text;
+    font-size: 18px;
+    font-weight: 500;
+    -webkit-text-fill-color: transparent;
+}
+.nav-contact{
+    background: #61E9E9;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    font-weight: bold;
+    color: white;
+    width: 165px;
+    height: 50px;
+    cursor: pointer;
+}
