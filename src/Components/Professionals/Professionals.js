@@ -1,7 +1,7 @@
 
 import professionalsImg from '../../assets/professionals.jpg'
 import './Professionals.css'
-const Professionals = () => {
+export const Professionals = () => {
   return (
     <div className='pros-container'>
         <div className="pros-left">
@@ -15,4 +15,3 @@ const Professionals = () => {
   )
 }
 
-export default Professionals

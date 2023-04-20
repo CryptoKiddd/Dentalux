@@ -2,7 +2,7 @@ import heroImg from '../../assets/hero-smile.png'
 import tooth from '../../assets/tooth.png'
 import arrowDown from '../../assets/arrowdown2.png'
 import './Hero.css'
-const Hero = () => {
+export const Hero = () => {
   return (
     <div className='hero-container'>
         <header className='hero-header'>
@@ -29,4 +29,3 @@ const Hero = () => {
   )
 }
 
-export default Hero

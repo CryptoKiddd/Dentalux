@@ -1,17 +1,36 @@
 
 import './App.css';
-import Hero from './Components/Hero/Hero';
-import Navigation from './Components/Navigation/Navigation';
-import Professionals from './Components/Professionals/Professionals';
-import Services from './Components/Services/Services';
+import {HeroPage,AboutPage,DentistsPage,ContactPage} from './Pages';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import "./index.css";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HeroPage />,
+  },
+  {
+    path: "/about",
+    element: <AboutPage />,
+  },
+  {
+    path: "/dentists",
+    element: <DentistsPage />,
+  },
+  {
+    path: "/contacts",
+    element: <ContactPage />,
+  },
+]);
+
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
-      <Hero />
-      <Professionals />
-      <Services />
+<RouterProvider router={router} />    
     </div>
   );
 }

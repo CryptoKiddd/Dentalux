@@ -1,7 +1,9 @@
-import React from 'react'
+ import { Link } from 'react-router-dom'
 import logo from  '../../assets/logo.png'
+
+
  import './Navigation.css'
-const Navigation = () => {
+export const Navigation = () => {
   return (
     <div className='navigation-container'>
         <div className="logo">
@@ -10,17 +12,16 @@ const Navigation = () => {
         </div>
         <nav className='navigation' >
             <ul className='nav-links'>
-                <li>ჩვენს შესახებ</li>
-                <li>სერვისები</li>
-                <li>ექიმები</li>
-                <li>Smile Gallery</li>
+                <Link to='/' className='link'>მთავარი</Link>
+                <Link  to='/about' className='link'>ჩვენს შესახებ</Link>
+                <Link to='/dentists' className='link'>ექიმები</Link>
+                <Link  className='link'>Smile Gallery</Link>
             </ul>
         </nav>
         <span className='nav-contact'>
-            დაგვიკავშირდით
+           <Link to='/contacts'  >  დაგვიკავშირდით  </Link> 
         </span>
     </div>
   )
 }
 
-export default Navigation

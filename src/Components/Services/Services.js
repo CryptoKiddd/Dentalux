@@ -4,7 +4,7 @@ import surgery from '../../assets/surgery.jpg'
 import tooth2 from '../../assets/tooth2.png'
 import { services } from '../../constants'
 import './Services.css'
-const Services = () => {
+export const Services = () => {
   return (
     <div className='services-container'>
         <h1 className='service-h1' >სერვისები</h1>
@@ -41,4 +41,3 @@ const Services = () => {
   )
 }
 
-export default Services

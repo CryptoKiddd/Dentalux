@@ -1,0 +1,85 @@
+.about-page-container{
+    padding:50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #F8F8F8;
+ 
+
+}
+.about-page-wrapper{
+    position: relative;
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.about-page-wrapper h1{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 61px;
+    color: #4E4E4E;
+    margin-bottom: 33px;
+
+}
+.about-page-stats{
+    margin-top: 100px;
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.about-us-p{
+    font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+color: #4E4E4E;
+z-index: 10;
+
+}
+.about-stat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 300px;
+    height: 125px;
+    background-color: white;
+    padding: 10px;
+    z-index: 10;
+
+
+}
+.about-stat h2{
+    font-weight: 700;
+font-size: 40px;
+line-height: 49px;
+
+color: #4E4E4E;
+}
+.about-stat span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #4E4E4E;
+}
+.tooth5{
+    position: absolute;
+    right: -10px;
+    top: 300px;
+    z-index: 1;
+}
+.about-filler{
+    background-color: #F8F8F8;
+    height: 600px;
+    width: 100%;
+}
