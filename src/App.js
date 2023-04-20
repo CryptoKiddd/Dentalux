@@ -1,5 +1,4 @@
-
-import './App.css';
+import { MantineProvider } from '@mantine/core';
 import {HeroPage,AboutPage,DentistsPage,ContactPage} from './Pages';
 import {
   createBrowserRouter,
@@ -30,7 +29,10 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="App">
+      <MantineProvider withGlobalStyles withNormalizeCSS>
+
 <RouterProvider router={router} />    
+      </MantineProvider>
     </div>
   );
 }
