@@ -1,5 +1,4 @@
-import { useDisclosure } from "@mantine/hooks";
-import { Modal, Button, Group } from "@mantine/core";
+import { Modal} from "@mantine/core";
 import "./DentistModal.css";
 import { useState } from "react";
 

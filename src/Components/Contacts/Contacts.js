@@ -1,6 +1,5 @@
 import './Contacts.css'
 import fb from  '../../assets/fb-icon.png'
-import call from  '../../assets/call-icon.png'
 import location from  '../../assets/location.png'
 import insta from  '../../assets/insta-icon.png'
 

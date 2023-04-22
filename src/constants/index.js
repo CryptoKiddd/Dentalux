@@ -15,7 +15,6 @@ import lia from "../assets/dentistImages/lia.jpeg";
 import megi from "../assets/dentistImages/megi.jpeg";
 
 import work1 from '../assets/works/work-1.jpeg'
-import work2 from '../assets/works/work-2.jpeg'
 import work3 from '../assets/works/work-3.jpeg'
 import work4 from '../assets/works/work-4.jpeg'
 import work5 from '../assets/works/work-5.jpeg'
