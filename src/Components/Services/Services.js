@@ -28,7 +28,7 @@ export const Services = () => {
             {
                 services.map(service=>{
                     return(
-                        <div key={service.name}>
+                        <div className='secondary-service' key={service.name}>
                             <img src={service.img} alt={service.name} />
                             <p>{service.name}</p>
                         </div>

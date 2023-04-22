@@ -1,7 +1,6 @@
-.hero-stats{
+.hero-stats-container{
     width: 100%;
-    height: 300px;
-    background-color: #F6F6F6;
+    /* height: 300px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +15,11 @@
     align-items: center;
     text-align: center;
     color: #4E4E4E;
+        background-color: #F6F6F6;
+        padding: 50px 100px;
+        border-radius: 25px;
+
+
 
    
 }
@@ -28,3 +32,11 @@
     font-size: 18px;
     margin-top: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+    .hero-stats-wrapper{
+        flex-direction: column;
+        gap: 50px;
+    }
+ 
+  }

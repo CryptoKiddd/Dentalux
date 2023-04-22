@@ -5,7 +5,7 @@ import dentists from '../../assets/dentists.png'
 import './HeroStats.css'
 export const HeroStats = () => {
   return (
-    <div className='hero-stats'>
+    <div className='hero-stats-container'>
         <div className="hero-stats-wrapper">
             <div className="hero-stats">
                 <img src={dentists} alt="dentists" />

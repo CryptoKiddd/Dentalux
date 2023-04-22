@@ -56,7 +56,7 @@ position: relative;
     margin-bottom: 10px;
 }
 .orthodontics img{
-    width: 500px;
+    /* width: 500px; */
     height: 250px;
     margin-left: 5px;
 }
@@ -92,7 +92,6 @@ position: relative;
 .surgery p{
     padding: 15px 0;
     bottom:0px;
-    left: 5px;
 }
 .secondary-services{
     display: flex;
@@ -112,3 +111,55 @@ position: relative;
     top: -300px;
 z-index: -1;
 }
+
+@media only screen and (max-width: 768px) {
+    .services-container{
+        padding: 100px 0px;
+
+    }
+	.main-services-left{
+        width: 100%;
+    }
+	.main-services-left img{
+        width: 100%;
+    }
+    .tooth2{
+        display: none;
+    }
+    
+	.main-services-left img{
+        width: 100%;
+    }
+    .main-services{
+        flex-direction: column;
+    }
+	.navigation-container{
+		justify-content: space-around;
+		
+	}
+    .secondary-services{
+        width: 100%;
+    }
+    .secondary-service{
+        width: 100%;
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .secondary-service img{
+         width: 100%;
+    }
+    .secondary-service p{
+        position: absolute;
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+      
+        background-color: transparent;
+        bottom:0px;
+        left: 0px;
+        font-size: 24px;
+        color:#4E4E4E;
+        backdrop-filter: blur(10px);
+    }
+ 
+  }

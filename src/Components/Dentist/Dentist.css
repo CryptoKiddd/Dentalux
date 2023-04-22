@@ -45,3 +45,15 @@ letter-spacing: 1px;
     align-items: center;
     gap: 40px
 }
+@media only screen and (max-width: 708px) {
+	.dentist-card {
+        width: 100%;
+        height: 400px;
+    }
+    .dentist-card-top img{
+        width: 230px;
+    height: 242px;
+    border-radius: 164px;
+    }
+ 
+  }

@@ -3,7 +3,9 @@ import logo from  '../../assets/logo.png'
 
 
  import './Navigation.css'
+import { useState } from 'react'
 export const Navigation = () => {
+  const [menu, setMenu] = useState(false)
   return (
     <div className='navigation-container'>
         <div className="logo">
@@ -11,7 +13,7 @@ export const Navigation = () => {
             <span>Dentalux</span>
         </div>
         <nav className='navigation' >
-            <ul className='nav-links'>
+            <ul className='nav-links' style={{top:menu?'0':'-100%'}}>
               <div className="nav-btn">
               <Link to='/' className='link'>მთავარი</Link>
               </div>
@@ -30,6 +32,11 @@ export const Navigation = () => {
         <span className='nav-contact'>
            <Link className='link' to='/contacts'  >კონტაქტები</Link> 
         </span>
+        <div className='ham' onClick={()=>setMenu(prev=>!prev)} style={{width:'60px',height:'60px'}}>
+            <span className="ham-span" ></span>
+            <span className="ham-span" ></span>
+            <span className="ham-span" ></span>
+        </div>
     </div>
   )
 }

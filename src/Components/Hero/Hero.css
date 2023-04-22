@@ -1,8 +1,9 @@
 .hero-container{
+    width:100%;
     display: flex;
     align-items: center;
-    padding: 20px 100px ;
     justify-content: center;
+    padding: 20px 100px ;
     position: relative;
     margin-top: 20px;
     gap: 200px;
@@ -12,23 +13,20 @@
 .hero-header{
     display: flex;
     flex-direction: column;
-    margin-top: -250px;
+    /* margin-top: -250px; */
     gap: 0;
 }
 .hero-h1{
-    font-weight: normal;
+    font-weight: bold;
     font-size: 80px;
-    color: #4F4F4F;
+    color: rgb(16, 58, 30);
 }
 .hero-span{
     width: 500px;
     font-weight: 400;
-font-size: 18px;
-line-height: 30px;
-    background: linear-gradient(270.1deg, #787878 -4.69%, #535353 72.26%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
+font-size: 20px;
+color: rgb(16, 58, 30);
+
 margin-bottom: 50px;
 
 }
@@ -53,7 +51,7 @@ font-weight: 700;
     position: absolute;
     z-index: -1;
     left: -125px;
-    top: -200px;
+    top: -180px;
     height: 1000px;
 }
 .arrowDown{
@@ -73,3 +71,68 @@ font-weight: 700;
         bottom: 100px;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .hero-right{
+        width: 50px;
+    }
+   
+    .hero-tooth {
+        width: 700px;
+        height: 700px;
+        top: 0;
+        
+    }
+    .hero-container{
+        padding: 20px;
+        gap: 0px;
+    }
+    .main-services{
+        width: 100%;
+    }
+    .arrowDown{
+        display: none;
+    }
+  }
+@media only screen and (max-width: 664px) {
+    .hero-tooth{
+display: none;    }
+.hero-right{
+    position: absolute;
+    right: 60px;
+    height: 300px;
+}
+.hero-right img{
+    height: 100%;
+}
+   .hero-header{
+    width: 100%;
+    gap: 25px;
+    justify-self: start;
+   }
+   .hero-h1{
+    font-size: 64px;
+   }
+   .hero-span{
+    font-size: 16px;
+    width: 400px;
+   }
+    .hero-tooth {
+        width: 700px;
+        height: 700px;
+        top: -125px;
+        left:0
+    }
+    .hero-container{
+        overflow-x: hidden;
+        padding-bottom: 30px;
+        
+        padding: 20px;
+        gap: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-header{
+        margin-top: 0;
+    }
+  }

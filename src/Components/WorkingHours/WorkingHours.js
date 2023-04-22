@@ -24,6 +24,7 @@ export const WorkingHours = () => {
                 })
             }
         </div>
+      
         <div className="tooth3">
             <img src={tooth3} alt="tooth" />
         </div>

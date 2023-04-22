@@ -24,6 +24,7 @@ export const Hero = () => {
 
         <img  src={arrowDown} alt="arrowDown" />
         </div>
+        
 
     </div>
   )

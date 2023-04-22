@@ -24,6 +24,8 @@
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.13);
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    color: rgb(16, 58, 30);
+
   
     /* backdrop-filter: blur(15px); */
 
@@ -36,19 +38,60 @@
 .work-info{
     padding-bottom: 50px;
 }
-.work-info p{
-    font-size: 24px;
+.work-info h3{
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(16, 58, 30);
+    margin-bottom: 15px;
+
+}
+.work-desc{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.work-info span{
+    font-size: 15px;
     font-weight: 700;
 }
 .work-tooth-1{
     position: absolute;
-    top: -250px;
+    top: 0px;
     left: -50px;
-    z-index: -1;
+    z-index: -2;
+    width: 800px;
+}
+.work-tooth-1 img,
+.work-tooth-2 img,
+.work-tooth-3 img{
+    width: 100%;
 }
 .work-tooth-2{
     position: absolute;
     top: 0px;
     right: 0;
-    z-index: -1;
+    z-index: -1;    
+    width: 800px;
+
 }
+.work-tooth-3{
+    position: absolute;
+    bottom: -5%;
+    right: 22%;
+    z-index: -1;    
+    width: 800px;
+
+}
+@media only screen and (max-width: 568px) {
+.works-wrapper{
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.work-tooth-2{
+    top: 40%;
+}
+   
+ 
+  }

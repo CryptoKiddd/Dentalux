@@ -18,8 +18,9 @@ export const Works = () => {
                             <img src={work.img} alt={work.name} />
                         </div>
                         <div className="work-info">
-                            <p>{work.name}</p>
-                            <span>ხანგრძლივობა: {work.timePeriod}</span>
+                            <h3>{work.name}</h3>
+                            <p className="work-desc"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, voluptates? </p>
+                            <span >ხანგრძლივობა: {work.timePeriod}</span>
                         </div>
 
                     </div>
@@ -31,6 +32,9 @@ export const Works = () => {
             </div>
             <div className="work-tooth-2">
                 <img src={tooth2} alt="" />
+            </div>
+            <div className="work-tooth-3">
+                <img src={tooth} alt="" />
             </div>
 
         </div>

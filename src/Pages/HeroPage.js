@@ -4,10 +4,10 @@ export  const HeroPage = () => {
     <>
       <Navigation />
       <Hero />
-      <Professionals />
+       <Professionals />
       <Services />
       <HeroStats />
-      <WorkingHours />
+      <WorkingHours /> 
     </>
   )
 }

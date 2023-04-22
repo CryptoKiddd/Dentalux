@@ -34,7 +34,7 @@ text-fill-color: transparent;
     font-weight: 400;
     font-size: 19px;
     line-height: 30px;
-    color: rgb(16, 58, 30);;
+    color: rgb(16, 58, 30);
     
 }
 .dentists-list{
@@ -57,3 +57,14 @@ text-fill-color: transparent;
     gap: 25px;
     margin-top: -150px;
 }
+@media only screen and (max-width: 568px) {
+	.dentists-list-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dentists-list-wrapper{
+        padding: 0px 15px;
+    }
+   
+ 
+  }
