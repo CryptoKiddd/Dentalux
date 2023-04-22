@@ -1,0 +1,77 @@
+.contacts-container{
+    display: flex;
+    background-color: #FDFDFD;
+    align-items: center;
+    justify-content: center;
+    max-width: 1180px;
+    width: 100%;
+    border-radius: 29px;
+    margin: 0 auto;
+    gap: 20px;
+}
+.contacts-left{
+    display: flex;
+    padding: 50px 39px;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 564px;
+    width: 100%;
+height: 563px;
+background: linear-gradient(139.14deg, rgba(36, 194, 194, 0.65) 10.13%, rgba(0, 225, 171, 0.38) 98.36%);
+border-radius: 29px;
+}
+.contacts-left h3{
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+
+}
+.contacts-left a{
+    
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+    margin-left: 10px;
+
+}
+.contacts-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.contacts-right label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 500;
+font-size: 17px;
+line-height: 24px;
+
+color: rgba(78, 78, 78, 0.71);
+letter-spacing: 0;
+}
+.contacts-right label input {
+    border-radius: 5px;
+    height: 44px;
+ width: 300px;
+ border: 0.5px solid rgba(120, 120, 120, 0.41);
+border-radius: 12px;
+}
+.contacts-right button {
+    background-color: #92E9D5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+    transition: 250ms ease;
+}
+.contacts-right button:hover{
+    scale: 1.1;
+}

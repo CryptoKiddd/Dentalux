@@ -1,5 +1,5 @@
 import { MantineProvider } from '@mantine/core';
-import {HeroPage,AboutPage,DentistsPage,ContactPage} from './Pages';
+import {HeroPage,AboutPage,DentistsPage,ContactPage,WorkPage} from './Pages';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -22,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/contacts",
     element: <ContactPage />,
+  },
+  {
+    path: "/works",
+    element: <WorkPage />,
   },
 ]);
 

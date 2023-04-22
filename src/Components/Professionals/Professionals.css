@@ -1,9 +1,12 @@
 .pros-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 100px 88px;
     margin-top: 200px;
    
+}
+.pros-right{
+    margin-top: -200px;
 }
 .pros-left img{
     max-width: 600px;

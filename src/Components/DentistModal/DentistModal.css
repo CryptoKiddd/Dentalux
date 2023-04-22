@@ -4,9 +4,13 @@
     gap: 50px;
 }
 .modal-left{
-    max-width:400px ;
+    max-width:500px ;
     width: 100%;
     height: 500px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     
 }
 .modal-left img{
@@ -35,6 +39,67 @@
 }
 .modal-info{
     display: flex;
+    position: relative;
     flex-direction: column;
-    gap: 100px;
+    margin-top: 20px;
+    gap: 40px;
+}
+.modal-info h1 {
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 61px;
+    margin-bottom: 50px;
+   
+    background: linear-gradient(270.1deg, #949494 -4.69%, #B0B0B0 72.26%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+.course-list{
+    max-width: 900px;
+    
+   
+    width: 100%;
+    list-style-type: lower-alpha;
+    position: relative;
+    z-index: 2;
+}
+.course-list::before{
+    content: '';
+	width: 0.5rem;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 8%;
+	background: rgb(152, 225, 247);
+    z-index: -1;
+	
+}
+.course-list li {
+    padding: 0.5rem 1.5rem 1rem;
+	border-radius: 1.5rem;
+	background: rgb(152, 225, 247);
+    margin-bottom: 15px;
+    font-size: 17px;
+    letter-spacing: 1px;
+   color: rgb(16, 58, 30);
+}
+.modal-options{
+   display: flex;
+  
+   gap: 50px;
+}
+.modal-options p{
+    padding: 10px 15px;
+    cursor: pointer;
+    color:  #949494;
+
+}
+::marker {
+	font-weight: 600;
+	color: tomato;
+	font-size: 1.8rem;
 }

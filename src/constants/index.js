@@ -14,6 +14,13 @@ import nino from "../assets/dentistImages/nino.jpeg";
 import lia from "../assets/dentistImages/lia.jpeg";
 import megi from "../assets/dentistImages/megi.jpeg";
 
+import work1 from '../assets/works/work-1.jpeg'
+import work2 from '../assets/works/work-2.jpeg'
+import work3 from '../assets/works/work-3.jpeg'
+import work4 from '../assets/works/work-4.jpeg'
+import work5 from '../assets/works/work-5.jpeg'
+import work6 from '../assets/works/work-6.jpeg'
+
 export const services = [
   {
     name: "ბავშვთა სტომატოლოგია",
@@ -181,3 +188,46 @@ export const dentists = [
     ]
   },
 ];
+
+export const works= [
+  {
+    name:'გათეთრება',
+    img:work1,
+    timePeriod:'6 თვე',
+    doctor:'ლია მაღლაკელიძე'
+
+  },
+  
+  {
+    name:'გათეთრება',
+    img:work3,
+    timePeriod:'6 თვე',
+    doctor:'ლია მაღლაკელიძე'
+
+
+  },
+  {
+    name:'გათეთრება',
+    img:work4,
+    timePeriod:'6 თვე',
+    doctor:'ლია მაღლაკელიძე'
+
+
+  },
+  {
+    name:'გათეთრება',
+    img:work5,
+    timePeriod:'6 თვე',
+    doctor:'ლია მაღლაკელიძე'
+
+
+  },
+  {
+    name:'გათეთრება',
+    img:work6,
+    timePeriod:'6 თვე',
+    doctor:'ლია მაღლაკელიძე'
+
+
+  }
+]

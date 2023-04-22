@@ -1,9 +1,13 @@
+import { Navigation,Contacts } from "../Components"
 
 
 export const ContactPage = () => {
   return (
-    <div>
+    <>
+    <Navigation />
+    <Contacts />
+
     
-    </div>
+    </>
   )
 }

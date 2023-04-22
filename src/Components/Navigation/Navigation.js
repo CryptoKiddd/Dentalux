@@ -12,14 +12,23 @@ export const Navigation = () => {
         </div>
         <nav className='navigation' >
             <ul className='nav-links'>
-                <Link to='/' className='link'>მთავარი</Link>
-                <Link  to='/about' className='link'>ჩვენს შესახებ</Link>
-                <Link to='/dentists' className='link'>ექიმები</Link>
-                <Link  className='link'>Smile Gallery</Link>
+              <div className="nav-btn">
+              <Link to='/' className='link'>მთავარი</Link>
+              </div>
+              <div className="nav-btn">
+              <Link  to='/about' className='link'>ჩვენს შესახებ</Link>
+              </div>
+              <div className="nav-btn">
+              <Link to='/dentists' className='link'>ექიმები</Link>
+              </div>
+              <div className="nav-btn">
+              <Link to='/works' className='link'>Smile Gallery</Link>
+              </div>
+                
             </ul>
         </nav>
         <span className='nav-contact'>
-           <Link to='/contacts'  >  დაგვიკავშირდით  </Link> 
+           <Link className='link' to='/contacts'  >კონტაქტები</Link> 
         </span>
     </div>
   )
