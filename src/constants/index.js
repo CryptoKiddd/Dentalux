@@ -4,6 +4,9 @@ import aesthetic from "../assets/aesthetic.jpg";
 import therapy from "../assets/therapy.jpg";
 import orthopedic from "../assets/orthopedic.jpg";
 import microscope from "../assets/microscope.jpg";
+import implant from '../assets/implant.jpg';
+import orthodontics from '../assets/orthodontics.jpg';
+import surgery from '../assets/surgery.jpg'
 
 import eteri from "../assets/dentistImages/eteri.jpeg";
 import gulnara from "../assets/dentistImages/gulnara.jpeg";
@@ -21,6 +24,18 @@ import work5 from '../assets/works/work-5.jpeg'
 import work6 from '../assets/works/work-6.jpeg'
 
 export const services = [
+  {
+    name: "იმპლანტაცია",
+    img: implant,
+  },
+  {
+    name: "ორთოდონტია",
+    img: orthodontics,
+  },
+  {
+    name: "ქირურგია",
+    img: surgery,
+  },
   {
     name: "ბავშვთა სტომატოლოგია",
     img: child,

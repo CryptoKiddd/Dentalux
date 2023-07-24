@@ -7,7 +7,7 @@
 }
 .hero-stats-wrapper{
   display: flex;
-  gap: 150px;
+  gap: 50px;
 }
 .hero-stats{
     display: flex;
@@ -39,4 +39,33 @@
         gap: 50px;
     }
  
+  }
+@media only screen and (max-width: 1400px) {
+    .hero-stats-wrapper{
+        gap: 50px;
+    }
+    .hero-stats{
+        width: 250px;
+    }
+ 
+  }
+@media only screen and (max-width: 768px) {
+    .hero-stats-wrapper{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .hero-stats{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #4E4E4E;
+            background-color: #F6F6F6;
+            padding: 25px 50px;
+            border-radius: 25px;
+    
+    
+    
+       
+    }
   }

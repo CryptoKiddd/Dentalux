@@ -26,7 +26,7 @@ export const AboutCompany = () => {
                 <h2>5000+</h2>
                 <span>კმაყოფილი მომხმარებელი</span>
             </div>
-            <img src={tooth5} alt="tooths" className='tooth5' />
+            {/* <img src={tooth5} alt="tooths" className='tooth5' /> */}
         </div>
         <div className='about-filler'></div>
 

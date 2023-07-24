@@ -1,59 +1,85 @@
 .dentist-card{
-    width: 300px;
-    height: 300px;
-    background-color: white;
-border-radius: 20px;
-padding: 25px 30px;
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 25px;
-margin-bottom: 55px;
-color: #696969;
+    position: relative;
+    width:350px;
+    height: 275px;
+    background: white;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
 }
-.dentist-card-top img{
-    width: 130px;
-height: 142px;
-border-radius: 164px;
+.dentist-card:hover{
+scale: 1.1;}
+.dentist-card-imgbox{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+
 }
-.dentist-card-top{
+.dentist-card:hover .dentist-card-imgbox{
+    width: 200px;
+    height: 200px;
+}
+.dentist-card-imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dentist-card-content{
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    transition: 0.5s;
 }
-
-.dentist-card-top p {
-    margin-top: 7px;
-  margin-bottom: 9px;
-  font-style: normal;
-font-weight: 300;
-font-size: 17px;
-line-height: 18px;
-color: #696969;
-letter-spacing: 1px;
+.dentist-card:hover .dentist-card-content{
+    bottom: -60px;
 }
-.dentist-card-top span {
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 18px;
-    color: rgb(16, 58, 30);
-    letter-spacing: 2px;
+.dentist-card-details{
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
 }
-.dentist-card-bottom{
+.dentist-card-details h2{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.2em;
+}
+.dentist-card-details h2 span{
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: 0.5;
+}
+.dentist-card-action-btn{
     display: flex;
-    align-items: center;
-    gap: 40px
+    justify-content: center;
+    gap: 20px;
+
 }
-@media only screen and (max-width: 708px) {
-	.dentist-card {
-        width: 100%;
-        height: 400px;
-    }
-    .dentist-card-top img{
-        width: 230px;
-    height: 242px;
-    border-radius: 164px;
-    }
- 
-  }
+.dentist-card-action-btn p {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: rgb(96, 96, 235);
+    color: white;
+    cursor: pointer;
+}
+

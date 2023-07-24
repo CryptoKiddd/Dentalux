@@ -5,6 +5,8 @@
     justify-content: center;
     padding: 25px 50px;
     position: relative;
+        background-color: rgb(234, 240, 245);
+
 
 }
 .works-wrapper{
@@ -16,7 +18,7 @@
 .works-card{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    /* gap: 20px; */
     width: 450px;
     padding: 25px ;
     border-radius: 20px;
@@ -27,16 +29,20 @@
     color: rgb(16, 58, 30);
 
   
-    /* backdrop-filter: blur(15px); */
 
 }
 .works-card img{
     width: 100%;
     height: 350px;
     border-radius: 20px;
+    border-bottom-right-radius:0 ;
+    border-bottom-left-radius: 0;
 }
 .work-info{
     padding-bottom: 50px;
+    
+    
+    backdrop-filter: blur(15px);
 }
 .work-info h3{
     font-size: 28px;
@@ -59,6 +65,8 @@
     left: -50px;
     z-index: -2;
     width: 800px;
+    animation: movetooth2 10s linear infinite ;
+
 }
 .work-tooth-1 img,
 .work-tooth-2 img,
@@ -71,15 +79,54 @@
     right: 0;
     z-index: -1;    
     width: 800px;
+    animation: movetooth2 10s linear infinite ;
 
 }
 .work-tooth-3{
     position: absolute;
-    bottom: -5%;
+    bottom: -20%;
     right: 22%;
     z-index: -1;    
     width: 800px;
+    
 
+}
+@keyframes movetooth2{
+    0%{
+     top: 0;
+    }
+    50%{
+        top: 100px;
+
+    }
+    100%{
+        top: 0;
+
+    }
+
+}
+@keyframes movetooth{
+    0%{
+        bottom: -20%;
+
+    }
+    50%{
+        bottom: -10%;
+
+    }
+    100%{
+        bottom: -20%;
+
+    }
+
+}
+
+.works-card{
+    
+    padding: 0;
+}
+.work-info{
+    padding: 10px;
 }
 @media only screen and (max-width: 568px) {
 .works-wrapper{
@@ -91,6 +138,41 @@
 }
 .work-tooth-2{
     top: 40%;
+}
+.work-tooth-1{
+    width: 400px;
+    height: 400px;
+    left: 0;
+}
+.work-tooth-1 img{
+    width: 100%;
+    height: 100%;
+}
+   
+ 
+  }
+@media only screen and (max-width: 480px) {
+.works-wrapper{
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    gap: 40px;
+    width: 100%;
+   
+}
+.works-container{
+    padding: 50px 20px;
+    
+
+}
+
+.works-card{
+    width: 100%;
+    padding: 0;
+}
+.work-info{
+    padding: 10px;
 }
    
  

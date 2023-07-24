@@ -2,12 +2,12 @@
     display: flex;
     justify-content: space-around;
     padding: 100px 88px;
-    margin-top: 200px;
+    /* margin-top: 200px; */
     gap: 20px;
    
 }
 .pros-right{
-    margin-top: -150px;
+    margin-top: -50px;
 }
 .pros-left img{
     width: 600px;
@@ -39,12 +39,7 @@ font-size: 18px;
 
 }
 @media only screen and (max-width: 768px) {
-.pros-container{
-    flex-direction: column;
-    padding-left:20px ;
-    padding-right:20px ;
-    margin-top: 20px
-}
+
 .pros-left{
     margin: 0;
     width:100%;
@@ -53,17 +48,44 @@ font-size: 18px;
 .pros-left img{
     width:100%;
 }
-.pros-right{
-    margin: 0;
 
-}
  
   }
 @media only screen and (max-width: 480px) {
+   
+    .pros-container h2 span{
+        font-size: 30px;
+    }
+ 
+    .pros-right p{
+        font-size: 15px;
+    }
+ 
+  }
+  @media only screen and (max-width: 1030px) {
     .pros-container{
+        flex-direction: column-reverse;
+    }
+  }
+@media only screen and (max-width: 1030px) {
+    .pros-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-left:20px ;
+        padding-right:20px ;
+        margin-top: 20px
+    }
+    .pros-right{
+        margin: 0;
     
-        padding-left:0px ;
-        padding-right:0px ;
+    }
+   
+    .pros-container h2 span{
+        font-size: 30px;
+    }
+ 
+    .pros-right p{
+        font-size: 15px;
     }
  
   }

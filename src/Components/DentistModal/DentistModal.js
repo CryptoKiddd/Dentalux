@@ -12,6 +12,7 @@ export const DentistModal = ({
   education
 }) => {
   const [modalInfo, setModalInfo] = useState(false)  
+  const [coursesN, setCoursesN] = useState(4)  
  
   return (
     <>
@@ -61,13 +62,16 @@ export const DentistModal = ({
         
           
             <ol className="course-list">
-                   {courses?.map(course=>{
+                   {courses?.slice(0,coursesN).map(course=>{
                     return(
                         <li key={course}>{course}</li>
                     )
                     
                                     })}
+                                    
             </ol>
+            {courses.length >4 && courses.slice(0,coursesN).length < courses.length && <p onClick={()=>setCoursesN(prev=>prev+2)}>მეტი..</p>}
+            
         </div>
           }
            

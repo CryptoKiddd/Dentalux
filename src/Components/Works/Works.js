@@ -27,15 +27,7 @@ export const Works = () => {
                     )
                 })
             }
-            <div className="work-tooth-1">
-                <img src={tooth} alt="" />
-            </div>
-            <div className="work-tooth-2">
-                <img src={tooth2} alt="" />
-            </div>
-            <div className="work-tooth-3">
-                <img src={tooth} alt="" />
-            </div>
+          
 
         </div>
 

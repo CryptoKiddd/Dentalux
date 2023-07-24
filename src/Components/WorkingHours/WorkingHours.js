@@ -11,7 +11,7 @@ export const WorkingHours = () => {
                 workingHours.map(days=>{
                     return(
                        <div className="day">
-                        <Switch on={days.working} />
+                        <Switch className='day-switch' on={days.working} />
                         <span className="day-span" >{days.day}</span>
                         <span className="hours-span">{days.hours}</span>
                         {
