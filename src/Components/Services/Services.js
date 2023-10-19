@@ -1,30 +1,58 @@
 
-import tooth2 from '../../assets/tooth2.png'
+import { useRef, useState } from 'react'
+
 import { services } from '../../constants'
 import './Services.css'
 export const Services = () => {
-  return (
-    <div className='service-container'>
-        <h1>სერვისები</h1>
-        {
-            services.map(service=>{
-                return(
-                    <div className='service-card' key={service.name}>
-                     <div className="service-card-imgbox">
-                         <img src={service.img} alt="" />
-                     </div>
-                     <div className="service-card-content">
-                         
-                          <h2>{service.name}</h2>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatibus corrupti ipsum provident, quaerat ea nesciunt deleniti voluptatum quae! Tenetur!</p>
-                          <span>ფასი 200₾</span>
-                     </div>
-                    </div>
-                )
-            })
-        }
-        {/* <img src={tooth2} className='tooth2' alt="abc" /> */}
-    </div>
-  )
+    const [openServiceIdx, setOpenServiceIdx] = useState(null);
+    const expandedServiceRef = useRef(null);
+  
+    function animateServiceCard(idx) {
+      setOpenServiceIdx((prevIdx) => (prevIdx === idx ? null : idx));
+    }
+  
+    const getServiceCardHeight = (idx) => {
+      return openServiceIdx === idx ? 'auto' : '310px';
+    };
+  
+    const getServiceCardWidth = (idx) => {
+      return openServiceIdx === idx ? '100%' : '500px';
+    };
+  
+    return (
+      <div className='service-container'>
+        <h1>ჩვენ გთავაზობთ პროფესიონალურ სტომატოლოგიურ მოვლას უახლესი ტექნოლოგიების გამოყენებით</h1>
+        {services.map((service, idx) => (
+          <div
+            ref={idx === openServiceIdx ? expandedServiceRef : null}
+            style={{
+              height: getServiceCardHeight(idx),
+              width: getServiceCardWidth(idx),
+            }}
+            className={`service-card ${openServiceIdx === idx ? 'expanded' : ''}`}
+            key={service.name}
+          >
+            {openServiceIdx !== idx && <img src={service.img} alt='' />}
+            <h2 className='servicename'>{service.name}</h2>
+            <div className='service-card-content'>
+              <p>{service.desc}</p>
+              {openServiceIdx === idx && (
+                <div className='serviceinfo'>
+                  {service.info}
+                </div>
+              )}
+              <p
+                onClick={() => {
+                  animateServiceCard(idx);
+                }}
+                className='service-more-info'
+              >
+                {openServiceIdx === idx ? 'დახურვა' : 'ვრცლად'}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
 }
 

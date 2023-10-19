@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
+import SingleService from './Components/SingleService/SingleService';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/works",
     element: <WorkPage />,
+  },
+  {
+    path: "/services/:id",
+    element: <SingleService />,
   },
 ]);
 

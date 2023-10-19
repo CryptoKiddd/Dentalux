@@ -9,7 +9,10 @@ export const Navigation = () => {
   return (
     <div className='navigation-container'>
         <div className="logo">
+        <Link to='/' className='link'>
+
             <img src={logo} alt="Logo" />
+        </Link>
             <span>Dentalux</span>
         </div>
         <nav className='navigation' >
