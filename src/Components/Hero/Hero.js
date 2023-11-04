@@ -1,4 +1,4 @@
-import heroImg from '../../assets/hero-smile.png'
+import heroImg from '../../assets/dentistImages/staff.jpg'
 import tooth from '../../assets/tooth.png'
 import arrowDown from '../../assets/arrowdown2.png'
 import { useDisclosure,useMediaQuery  } from '@mantine/hooks';

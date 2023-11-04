@@ -3,12 +3,12 @@ import radiology from "../assets/radiology.jpg";
 import aesthetic from "../assets/aesthetic.jpg";
 import therapy from "../assets/therapy.jpg";
 import orthopedic from "../assets/orthopedic.jpg";
-import microscope from "../assets/microscope.jpg";
+import microscope from "../assets/microscope.avif";
 import paradontologia from "../assets/paradontologia.png";
 import implanti from "../assets/implanti.jpg";
 
 import eteri from "../assets/dentistImages/eteri.jpeg";
-import gulnara from "../assets/dentistImages/gulnara.jpeg";
+import gulnara from "../assets/dentistImages/gulnara.jpg";
 import qetevan from "../assets/dentistImages/qetevan.jpeg";
 import nodari from "../assets/dentistImages/nodari.jpeg";
 import maia from "../assets/dentistImages/maia.jpeg";
